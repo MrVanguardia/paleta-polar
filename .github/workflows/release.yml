@@ -53,7 +53,7 @@ jobs:
           echo "assets=$N" >> "$GITHUB_OUTPUT"
           if [ "$N" != none ] && [ "$N" != 0 ]; then echo "La versión ya tiene archivos; no se tocan."; fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.existe.outputs.assets == 'none' || steps.existe.outputs.assets == '0'
         with:
           node-version: 20
