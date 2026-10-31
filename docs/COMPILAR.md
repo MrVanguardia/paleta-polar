@@ -12,7 +12,7 @@ No necesitas instalar nada.
   git tag v1.5.2
   git push origin v1.5.2
   ```
-  También puedes hacerlo desde la web: **Releases → Draft a new release → Choose a tag → escribe `v1.5.2` → Create new tag → Publish release**. En unos minutos aparecerán el APK y el AAB en esa versión.
+  O desde la web, sin terminal: **Actions → Publicar versión → Run workflow**, escribe `v1.5.2` y toca **Run workflow**. En unos minutos aparecerá la versión en **Releases** con el APK y el AAB.
 
 El código de versión de Android se calcula solo a partir de la etiqueta (`v1.5.2` → `10502`), así que siempre sube.
 
