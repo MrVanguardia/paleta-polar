@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paleta Polar — Política de privacidad</title>
+<style>
+:root{--bone:#eeeae0;--ink:#141414;--ink2:#55524b;--accent:#e23a68;--line:rgba(20,20,20,.16)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bone);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+.eb{font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+h1{font:800 44px/1 'Arial Narrow',Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:10px 0 6px}
+h2{font:700 20px/1.25 'Arial Narrow',Arial,sans-serif;text-transform:uppercase;letter-spacing:.03em;margin:34px 0 8px;padding-top:14px;border-top:1.5px solid var(--ink)}
+p,li{color:#222}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0}
+th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:8px 6px}
+th{font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase}
+.wrap{overflow-x:auto}
+a{color:var(--accent)}
+nav{display:flex;gap:12px;font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.08em;margin-top:14px}
+.fill{background:#fff3c4;padding:0 4px}
+</style>
+</head>
+<body>
+<main>
+<div class="eb">Paleta Polar / Documento legal</div>
+<h1>Política de privacidad</h1>
+<p><strong>Vigente desde el 30 de octubre de 2026.</strong> Aplica a la app Paleta Polar para Android (com.paletapolar.juego).</p>
+<nav><a href="#es">Español</a><a href="#en">English</a></nav>
+
+<section id="es">
+<h2>Resumen</h2>
+<p>Paleta Polar no pide cuentas, no muestra anuncios, no usa herramientas de analítica y no guarda tus datos en servidores propios. Tu progreso se queda en tu teléfono. En el modo multijugador, tu apodo, tu personaje y el estado de la partida viajan a los otros jugadores de la sala a través de los servicios de conexión descritos abajo.</p>
+
+<h2>Responsable</h2>
+<p>Desarrollador: <span class="fill">[nombre del desarrollador]</span>. Contacto: <span class="fill">[correo de contacto]</span>.</p>
+
+<h2>Datos que se guardan en tu teléfono</h2>
+<p>Progreso (estrellas y récords), personaje elegido, apodo para el multijugador y ajustes (controles, sonido, vibración). Se guardan solo en el almacenamiento de la app. Puedes borrarlos desinstalando la app o desde Ajustes de Android → Apps → Paleta Polar → Almacenamiento → Borrar datos.</p>
+
+<h2>Datos que se envían al jugar en línea</h2>
+<p>Solo cuando creas o te unes a una sala se transmite lo siguiente:</p>
+<div class="wrap"><table>
+<tr><th>Dato</th><th>A quién llega</th><th>Para qué</th></tr>
+<tr><td>Apodo y personaje</td><td>Los demás jugadores de la sala</td><td>Mostrarte en la sala y en la partida</td></tr>
+<tr><td>Movimientos, acciones y estado de la partida</td><td>Los demás jugadores de la sala</td><td>Sincronizar el juego</td></tr>
+<tr><td>Dirección IP e identificadores aleatorios de conexión</td><td>Servicios de conexión (tabla siguiente) y, en conexión directa, los otros jugadores</td><td>Establecer la conexión</td></tr>
+</table></div>
+<p>No se envía tu nombre real, tu correo, tu ubicación, tus contactos ni ningún identificador del dispositivo. No uses tu nombre real como apodo.</p>
+
+<h2>Servicios de terceros usados en el multijugador</h2>
+<div class="wrap"><table>
+<tr><th>Servicio</th><th>Función</th></tr>
+<tr><td>PeerJS Cloud (0.peerjs.com)</td><td>Pone en contacto a los teléfonos para la conexión directa</td></tr>
+<tr><td>Servidores STUN de Google y Twilio</td><td>Ayudan a cada teléfono a conocer su dirección pública</td></tr>
+<tr><td>Brokers MQTT públicos: EMQX (broker.emqx.io), HiveMQ (broker.hivemq.com) y Eclipse Mosquitto (test.mosquitto.org)</td><td>Retransmiten la partida cuando la conexión directa no es posible</td></tr>
+</table></div>
+<p>Las conexiones van cifradas en tránsito (TLS y DTLS). Los mensajes de la partida pasan por estos servicios mientras juegas; el desarrollador no los almacena. Cada servicio tiene su propia política de privacidad.</p>
+
+<h2>Permisos</h2>
+<p>Internet y estado de la red (para el multijugador) y vibración (respuesta háptica, se puede apagar en Ajustes). La app no pide acceso a cámara, micrófono, ubicación, contactos ni archivos.</p>
+
+<h2>Menores de edad</h2>
+<p>La app no está dirigida a menores de 13 años y no recopila a sabiendas datos personales de menores. Si crees que un menor envió datos personales, escríbenos y te ayudaremos.</p>
+
+<h2>Conservación y eliminación</h2>
+<p>El desarrollador no conserva datos tuyos. Los datos locales se eliminan al borrar los datos de la app o desinstalarla.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, publicaremos la nueva versión en esta página con su fecha de vigencia.</p>
+</section>
+
+<section id="en">
+<h2>Privacy policy (English)</h2>
+<p><strong>Effective October 30, 2026.</strong> Applies to the Paleta Polar Android app (com.paletapolar.juego).</p>
+<p><strong>Summary.</strong> Paleta Polar has no accounts, no ads and no analytics, and stores no data on servers of its own. Your progress stays on your phone. In multiplayer, your nickname, character and game state are sent to the other players in your room through the connection services listed above.</p>
+<p><strong>Controller.</strong> Developer: <span class="fill">[developer name]</span>. Contact: <span class="fill">[contact email]</span>.</p>
+<p><strong>Stored on your device.</strong> Progress, chosen character, multiplayer nickname and settings, kept only in the app's storage. Delete them by uninstalling the app or clearing its data.</p>
+<p><strong>Sent when you play online.</strong> Nickname, character, moves and game state go to the other players in the room. IP address and random connection IDs reach the connection services and, on direct connections, the other players. No real name, email, location, contacts or device identifiers are sent. Do not use your real name as a nickname.</p>
+<p><strong>Third-party services.</strong> PeerJS Cloud (matchmaking for direct connections), Google and Twilio STUN servers, and the public MQTT brokers EMQX, HiveMQ and Eclipse Mosquitto (relay when a direct connection is not possible). Traffic is encrypted in transit (TLS/DTLS). Game messages pass through these services while you play; the developer does not store them.</p>
+<p><strong>Permissions.</strong> Internet and network state (multiplayer) and vibration (haptics, can be turned off).</p>
+<p><strong>Children.</strong> The app is not directed to children under 13 and does not knowingly collect personal data from them.</p>
+<p><strong>Retention.</strong> The developer keeps no data about you. Local data is removed when you clear the app's data or uninstall it.</p>
+<p><strong>Changes.</strong> Updates will be posted on this page with a new effective date.</p>
+</section>
+</main>
+</body>
+</html>

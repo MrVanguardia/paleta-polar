@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Problema de seguridad
+    url: https://github.com/MrVanguardia/paleta-polar/security/advisories/new
+    about: Repórtalo en privado, no en un issue público.
+  - name: 📖 Documentación
+    url: https://github.com/MrVanguardia/paleta-polar/blob/main/docs/DOCUMENTACION.md
+    about: Manual del jugador, documentación técnica y guía de Google Play.

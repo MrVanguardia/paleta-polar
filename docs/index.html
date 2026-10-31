@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paleta Polar — Arcade de hielo y fuego para Android</title>
+<meta name="description" content="Crea y rompe hielo, come fruta y escapa del fuego. 20 niveles, 6 helados y multijugador online para 4. Sin anuncios.">
+<meta property="og:title" content="Paleta Polar">
+<meta property="og:description" content="Crea y rompe hielo, come fruta y escapa del fuego. Solo o con 3 amigos online.">
+<meta property="og:image" content="https://mrvanguardia.github.io/paleta-polar/play-store/grafico-destacado-1024x500.png">
+<meta name="theme-color" content="#0a1430">
+<link rel="icon" href="play-store/icono-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#eeeae0;--ink:#141414;--ink2:#55524b;--accent:#ff4f7b;--night:#0a1430;--line:rgba(20,20,20,.16)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--ink);font:16px/1.55 'IBM Plex Mono',ui-monospace,monospace}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1.5px solid var(--ink);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+header nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:520px){header nav a:nth-child(-n+2){display:none}}
+header a{text-decoration:none}
+header a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;padding:56px 0 40px}
+.eb{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
+h1{font:400 clamp(64px,13vw,168px)/.86 Anton,Impact,sans-serif;text-transform:uppercase;margin:14px 0 18px;letter-spacing:-.01em}
+h1 em{display:block;margin-top:.12em;font:italic 400 clamp(30px,4.2vw,54px)/1.05 'Instrument Serif',Georgia,serif;text-transform:none;color:var(--accent);letter-spacing:0}
+.lead{font:400 clamp(20px,2.3vw,26px)/1.3 'Instrument Serif',Georgia,serif;max-width:30ch;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border:1.5px solid var(--ink);text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;transition:background .15s,color .15s}
+.btn.primary{background:var(--ink);color:var(--bone)}
+@media (hover:hover){.btn:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}}
+.meta{margin-top:14px;font-size:12px;color:var(--ink2)}
+.shot{border:1.5px solid var(--ink);background:var(--night);aspect-ratio:16/9;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.stats div{padding:22px 18px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font:400 54px/1 Anton,Impact,sans-serif}
+.stats span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+section{padding:56px 0}
+h2{font:400 clamp(34px,5vw,56px)/1 Anton,Impact,sans-serif;text-transform:uppercase;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1.5px solid var(--ink)}
+.grid article{padding:22px 20px 26px 0;border-bottom:1px solid var(--line)}
+.grid h3{font:italic 400 26px/1.1 'Instrument Serif',Georgia,serif;margin:6px 0 8px}
+.grid p{margin:0;color:#2a2a2a;font-size:14px}
+.n{font-size:11px;color:var(--accent);letter-spacing:.12em}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery img{width:100%;display:block;border:1.5px solid var(--ink);aspect-ratio:16/9;object-fit:cover;background:var(--night)}
+.night{background:var(--night);color:var(--bone)}
+.night .eb{color:#9aa6c4}
+.night ol{margin:0;padding-left:22px;max-width:62ch}
+.night li{margin:0 0 10px}
+footer{border-top:1.5px solid var(--ink);padding:26px 0 40px;font-size:12px;color:var(--ink2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:36px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats div:nth-child(2){border-right:0}
+  .stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .grid,.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a href="./"><b>Paleta Polar</b></a>
+  <nav>
+    <a href="#juego">El juego</a>
+    <a href="#instalar">Instalar</a>
+    <a href="privacidad/">Privacidad</a>
+    <a href="https://github.com/MrVanguardia/paleta-polar">GitHub</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="eb">Arcade de laberinto · Android</div>
+    <h1>Paleta<br>Polar<em>hielo contra fuego</em></h1>
+    <p class="lead">Levanta muros de hielo, cómete toda la fruta y corre a la puerta antes de derretirte.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/MrVanguardia/paleta-polar/releases/latest/download/PaletaPolar.apk">⬇ Descargar APK</a>
+      <a class="btn" href="https://github.com/MrVanguardia/paleta-polar">Ver el código</a>
+    </div>
+    <div class="meta">Android 7.0 o superior · Gratis · Sin anuncios ni compras</div>
+  </div>
+  <div class="shot"><img src="img/02-partida.jpg" alt="Partida de Paleta Polar"></div>
+</div>
+</div>
+
+<div class="wrap">
+<div class="stats">
+  <div><b>20</b><span>Niveles</span></div>
+  <div><b>7</b><span>Enemigos</span></div>
+  <div><b>6</b><span>Helados</span></div>
+  <div><b>4</b><span>Jugadores online</span></div>
+</div>
+
+<section id="juego">
+  <h2>El juego</h2>
+  <div class="grid">
+    <article><div class="n">01</div><h3>Hielo con un toque</h3><p>Crea una fila de hielo hacia donde miras y rómpela con el mismo botón. Encierra a los enemigos o abre un atajo.</p></article>
+    <article><div class="n">02</div><h3>Fruta por oleadas</h3><p>Cada nivel trae varias oleadas. Cómelas seguidas para multiplicar los puntos y abrir la puerta de salida.</p></article>
+    <article><div class="n">03</div><h3>Siete tipos de fuego</h3><p>Brasas que deambulan, llamaradas que te siguen, magma que derrite tu hielo, vapor que lo atraviesa y volcancitos que disparan.</p></article>
+    <article><div class="n">04</div><h3>Con tus amigos</h3><p>Crea una sala, comparte el código de 4 letras y jueguen hasta cuatro, cada uno en su teléfono y desde donde sea.</p></article>
+    <article><div class="n">05</div><h3>Tú eliges el control</h3><p>Joystick, deslizar o cruceta, modo zurdo y tamaño ajustable. Con mando, los controles táctiles desaparecen.</p></article>
+    <article><div class="n">06</div><h3>Música propia</h3><p>Un tema para cada capítulo y efectos sintetizados en vivo. Funciona sin internet en un jugador.</p></article>
+  </div>
+</section>
+
+<section>
+  <h2>Capturas</h2>
+  <div class="gallery">
+    <img src="img/01-inicio.jpg" alt="Menú de inicio" loading="lazy">
+    <img src="img/04-capitulo-dos.jpg" alt="Capítulo dos" loading="lazy">
+    <img src="img/03-niveles.jpg" alt="Selección de niveles" loading="lazy">
+    <img src="img/05-bestiario.jpg" alt="Bestiario" loading="lazy">
+    <img src="img/06-ajustes.jpg" alt="Ajustes" loading="lazy">
+    <img src="img/02-partida.jpg" alt="Partida" loading="lazy">
+  </div>
+</section>
+</div>
+
+<section class="night" id="instalar">
+  <div class="wrap">
+    <div class="eb">Instalar</div>
+    <h2>En dos pasos</h2>
+    <ol>
+      <li>Descarga <a href="https://github.com/MrVanguardia/paleta-polar/releases/latest/download/PaletaPolar.apk"><b>PaletaPolar.apk</b></a> en tu teléfono Android.</li>
+      <li>Ábrelo y permite instalar apps de esa fuente cuando Android te lo pida.</li>
+    </ol>
+  </div>
+</section>
+
+<div class="wrap">
+<footer>
+  <span>© 2026 MrVanguardia · Todos los derechos reservados</span>
+  <span><a href="privacidad/">Política de privacidad</a> · <a href="https://github.com/MrVanguardia/paleta-polar/blob/main/CHANGELOG.md">Novedades</a> · <a href="https://github.com/MrVanguardia/paleta-polar/issues">Reportar un error</a></span>
+</footer>
+</div>
+</body>
+</html>

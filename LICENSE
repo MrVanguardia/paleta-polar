@@ -1,0 +1,58 @@
+Paleta Polar
+Copyright (c) 2026 MrVanguardia. Todos los derechos reservados.
+All rights reserved.
+
+ESPAÑOL
+
+El código fuente, los niveles, los personajes, los gráficos, la música, los
+efectos de sonido, los textos y el nombre "Paleta Polar" (en conjunto, "el
+Juego") son propiedad de su autor.
+
+Se publica el código fuente únicamente para que se pueda leer y estudiar.
+Ver el código no concede ninguna licencia. Sin permiso previo y por escrito
+del autor no está permitido:
+
+  1. copiar, modificar, adaptar o traducir el Juego o partes de él;
+  2. distribuir, sublicenciar, vender o publicar el Juego, compilaciones del
+     Juego o versiones modificadas, en tiendas de aplicaciones o en cualquier
+     otro medio;
+  3. usar el nombre, los personajes o el arte del Juego en otros productos.
+
+Se permite descargar e instalar las versiones oficiales publicadas en la
+página de Releases de este repositorio o en Google Play para uso personal.
+
+Los pull requests enviados a este repositorio se aceptan bajo los términos
+de CONTRIBUTING.md.
+
+EL JUEGO SE OFRECE "TAL CUAL", SIN GARANTÍAS DE NINGÚN TIPO. EN LA MEDIDA EN
+QUE LO PERMITA LA LEY, EL AUTOR NO SERÁ RESPONSABLE DE NINGÚN DAÑO DERIVADO
+DE SU USO.
+
+ENGLISH
+
+The source code, levels, characters, graphics, music, sound effects, text
+and the name "Paleta Polar" (together, "the Game") are owned by the author.
+
+The source code is published for reading and study only. Viewing it grants
+no license. Without the author's prior written permission you may not copy,
+modify, distribute, sell or publish the Game, builds of it or modified
+versions, nor use its name, characters or art in other products. Installing
+the official releases for personal use is permitted.
+
+THE GAME IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+COMPONENTES DE TERCEROS / THIRD-PARTY COMPONENTS
+
+Estos archivos no están cubiertos por el aviso anterior y conservan sus
+propias licencias:
+
+  web-src/peerjs.min.js   PeerJS 1.5.4      MIT License
+  web-src/mqtt.min.js     MQTT.js 5.10.1    MIT License
+  web-src/fonts/*         Anton, IBM Plex Mono, Instrument Serif,
+                          Lilita One, Nunito  SIL Open Font License 1.1
+  android/                Plantilla de Capacitor 6.2.0   MIT License
+
+Los avisos de copyright y los textos de licencia están en
+THIRD_PARTY_NOTICES.md y en web-src/fonts/OFL.txt, y se incluyen en la
+app. Las fuentes OFL pueden usarse dentro del Juego pero no venderse por
+separado.

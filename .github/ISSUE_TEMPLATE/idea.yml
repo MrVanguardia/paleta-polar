@@ -1,0 +1,20 @@
+name: 💡 Proponer una idea
+description: Un nivel, un enemigo, un modo o una mejora
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Tu idea
+      description: ¿Qué te gustaría ver en el juego?
+    validations:
+      required: true
+  - type: textarea
+    id: por-que
+    attributes:
+      label: ¿Por qué lo haría mejor?
+  - type: textarea
+    id: extra
+    attributes:
+      label: Bocetos o referencias
+      description: Si es un nivel, puedes dibujarlo con la leyenda de mapas (15 × 13).

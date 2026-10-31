@@ -1,0 +1,24 @@
+{
+  "name": "paleta-polar",
+  "version": "1.5.1",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test.js",
+    "build:web": "python3 tools/build-www.py",
+    "build:android": "python3 tools/build-www.py && sh native/build-apk.sh",
+    "sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "6.2.0",
+    "@capacitor/core": "6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.2.0"
+  },
+  "description": "Paleta Polar: arcade de laberinto para Android. Crea y rompe hielo, come fruta y escapa del fuego.",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrVanguardia/paleta-polar.git"
+  }
+}

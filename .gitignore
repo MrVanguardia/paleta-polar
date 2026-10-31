@@ -1,0 +1,31 @@
+# dependencias y generados
+node_modules/
+www/
+dist/
+native/build/
+*.apk
+*.aab
+
+# Android Studio / Capacitor
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.iml
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+android/capacitor-cordova-android-plugins/
+
+# llaves de firma: NUNCA subirlas
+*.jks
+*.keystore
+*.p12
+llave.txt
+CLAVES-FIRMA.txt
+.pw
+
+# sistema
+.DS_Store
+Thumbs.db

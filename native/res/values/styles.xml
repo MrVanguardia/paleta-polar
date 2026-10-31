@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pp_bg">#0A1430</color>
+    <style name="PP.Theme" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:colorPrimary">#132558</item>
+        <item name="android:colorPrimaryDark">#0A1430</item>
+        <item name="android:colorAccent">#FF5C8D</item>
+        <item name="android:navigationBarColor">#0A1430</item>
+    </style>
+</resources>
