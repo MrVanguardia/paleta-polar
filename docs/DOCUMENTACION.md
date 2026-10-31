@@ -164,12 +164,12 @@ El paquete `PaletaPolar.aab` ya cumple los requisitos técnicos de Google Play a
 
 - [ ] Cuenta de desarrollador de Google Play (pago único de 25 USD) con identidad verificada.
 - [ ] Copia de seguridad de `upload-keystore.jks` y `CLAVES-FIRMA.txt` fuera del teléfono y de la computadora (por ejemplo, un USB y una nube privada).
-- [ ] Política de privacidad publicada en una dirección web (paso 1).
-- [ ] Rellenar en la política tu nombre de desarrollador y correo de contacto (están marcados en amarillo).
+- [x] Política de privacidad publicada en una dirección web (paso 1).
+- [x] Política con desarrollador (OFICIO CERO) y correo de contacto (hola@oficiocero.com).
 
 **Pasos**
 
-1. **Publica la política de privacidad.** Ya está publicada con GitHub Pages desde la carpeta `docs/` de este repositorio: <https://mrvanguardia.github.io/paleta-polar/privacidad/>. Solo falta rellenar tu nombre y tu correo en `docs/privacidad/index.html` (marcados en amarillo) y subir el cambio.
+1. **Publica la política de privacidad.** Ya está publicada con GitHub Pages desde la carpeta `docs/` de este repositorio: <https://mrvanguardia.github.io/paleta-polar/privacidad/>. Esa es la dirección que se pega en Play Console.
 2. **Crea la app** en Play Console → Crear app: nombre Paleta Polar, idioma predeterminado español, tipo Juego, gratuita. Acepta las declaraciones.
 3. **Configura la firma.** Al subir el primer AAB, acepta Firma de apps de Google Play (Play guarda la llave final de la app; tu `upload-keystore.jks` solo sirve para subir versiones).
 4. **Completa Contenido de la app** (menú Política → Contenido de la app):
@@ -299,11 +299,11 @@ La clasificación esperada es la más baja en casi todos los sistemas (PEGI 3, E
 
 ## Política de privacidad
 
-Vigente desde el 30 de octubre de 2026. La versión para publicar en la web, en español e inglés, está en [`docs/privacidad/index.html`](privacidad/index.html) y se publica sola en <https://mrvanguardia.github.io/paleta-polar/privacidad/>. Antes de publicarla, rellena los dos campos entre corchetes.
+Vigente desde el 30 de octubre de 2026. La versión para publicar en la web, en español e inglés, está en [`docs/privacidad/index.html`](privacidad/index.html) y se publica sola en <https://mrvanguardia.github.io/paleta-polar/privacidad/>.
 
 **Resumen.** Paleta Polar no pide cuentas, no muestra anuncios, no usa analítica y no guarda tus datos en servidores propios. Tu progreso se queda en tu teléfono. En el multijugador, tu apodo, tu personaje y el estado de la partida viajan a los otros jugadores de la sala a través de los servicios de conexión descritos abajo.
 
-**Responsable.** Desarrollador: \[nombre del desarrollador\]. Contacto: \[correo de contacto\].
+**Responsable.** Desarrollador: OFICIO CERO. Contacto: hola@oficiocero.com.
 
 **Datos guardados en tu teléfono.** Progreso (estrellas y récords), personaje, apodo y ajustes. Se guardan solo en el almacenamiento de la app y se borran al desinstalarla o al borrar sus datos en Ajustes de Android.
 
@@ -335,11 +335,11 @@ Vigentes desde el 30 de octubre de 2026. Google Play no exige términos de uso, 
 2. **Licencia.** Te damos una licencia personal, gratuita, no exclusiva e intransferible para usar la app en tus dispositivos. No puedes venderla, redistribuirla ni publicar versiones modificadas como propias.
 3. **Multijugador.** Elige un apodo respetuoso y que no sea tu nombre real. No uses apodos ofensivos, que suplanten a otra persona o que incluyan datos personales. El multijugador depende de servicios de terceros gratuitos y puede no estar disponible en algún momento.
 4. **Conducta.** No intentes interferir con las partidas de otros, modificar el tráfico de red ni usar la app para fines ilegales.
-5. **Propiedad intelectual.** El juego, sus personajes, niveles, gráficos y sonidos pertenecen a \[nombre del desarrollador\]. Las librerías y fuentes de terceros se usan según sus licencias (ver Licencias de terceros).
+5. **Propiedad intelectual.** El juego, sus personajes, niveles, gráficos y sonidos pertenecen a OFICIO CERO. Las librerías y fuentes de terceros se usan según sus licencias (ver Licencias de terceros).
 6. **Sin garantías.** La app se ofrece "tal cual". No garantizamos que funcione sin interrupciones ni errores.
 7. **Responsabilidad.** En la medida que permita la ley, el desarrollador no responde por daños indirectos derivados del uso de la app.
 8. **Cambios.** Podemos actualizar la app y estos términos. Publicaremos los cambios con su fecha.
-9. **Contacto.** \[correo de contacto\].
+9. **Contacto.** hola@oficiocero.com.
 
 ## Licencias de terceros
 
