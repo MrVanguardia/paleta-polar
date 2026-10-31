@@ -25,7 +25,7 @@ jobs:
     name: Compilar y publicar
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ inputs.tag || github.ref }}
 
@@ -53,16 +53,16 @@ jobs:
           echo "assets=$N" >> "$GITHUB_OUTPUT"
           if [ "$N" != none ] && [ "$N" != 0 ]; then echo "La versión ya tiene archivos; no se tocan."; fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: steps.existe.outputs.assets == 'none' || steps.existe.outputs.assets == '0'
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Pruebas
         if: steps.existe.outputs.assets == 'none' || steps.existe.outputs.assets == '0'
         run: node tests/test.js
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         if: steps.existe.outputs.assets == 'none' || steps.existe.outputs.assets == '0'
         with:
           distribution: temurin
