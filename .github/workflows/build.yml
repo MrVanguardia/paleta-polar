@@ -56,13 +56,13 @@ jobs:
           VERSION_NAME: dev-${{ github.run_number }}
         run: sh native/build-apk.sh
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: PaletaPolar-apk
           path: native/PaletaPolar.apk
           if-no-files-found: error
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: PaletaPolar-aab-sin-firmar
           path: native/PaletaPolar.aab
